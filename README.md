@@ -1,1 +1,153 @@
-# AbdullahAljubairy.github.io
+# AbdullahAljubairy.github.io<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Present Tense – Grammar Lesson</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .question {
+      margin-top: 20px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Present Tense – Grammar Lesson</h1>
+
+  <p>We use the <strong>Simple Present Tense</strong> to talk about:</p>
+  <ul>
+    <li>Habits → I wake up early.</li>
+    <li>Facts → The sun rises in the east.</li>
+    <li>Routines → She goes to school at 7:00 a.m.</li>
+  </ul>
+
+  <h3>Verb Forms:</h3>
+  <ul>
+    <li><strong>I/You/We/They</strong>: play, eat, go</li>
+    <li><strong>He/She/It</strong>: plays, eats, goes</li>
+  </ul>
+
+  <p><strong>Examples:</strong></p>
+  <ul>
+    <li>He <strong>eats</strong> breakfast.</li>
+    <li>They <strong>go</strong> to school.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Grammar Quiz – Choose the correct answers</h2>
+
+  <form id="quiz-form">
+    <div class="question">
+      1. I ____ breakfast at 7:00.<br>
+      <input type="radio" name="q1" value="correct"> eat<br>
+      <input type="radio" name="q1" value="wrong"> eats<br>
+      <input type="radio" name="q1" value="wrong"> eating
+    </div>
+
+    <div class="question">
+      2. She ____ to school every day.<br>
+      <input type="radio" name="q2" value="wrong"> go<br>
+      <input type="radio" name="q2" value="wrong"> going<br>
+      <input type="radio" name="q2" value="correct"> goes
+    </div>
+
+    <div class="question">
+      3. They ____ TV at night.<br>
+      <input type="radio" name="q3" value="wrong"> watches<br>
+      <input type="radio" name="q3" value="correct"> watch<br>
+      <input type="radio" name="q3" value="wrong"> watching
+    </div>
+
+    <div class="question">
+      4. He ____ his homework after dinner.<br>
+      <input type="radio" name="q4" value="wrong"> do<br>
+      <input type="radio" name="q4" value="correct"> does<br>
+      <input type="radio" name="q4" value="wrong"> doing
+    </div>
+
+    <div class="question">
+      5. Choose the correct sentence:<br>
+      <input type="radio" name="q5" value="correct"> We play football every Friday.<br>
+      <input type="radio" name="q5" value="wrong"> We plays football every Friday.<br>
+      <input type="radio" name="q5" value="wrong"> We playing football every Friday.
+    </div>
+
+    <div class="question">
+      6. Which subject matches the verb “wakes up”?<br>
+      <input type="radio" name="q6" value="wrong"> I<br>
+      <input type="radio" name="q6" value="wrong"> You<br>
+      <input type="radio" name="q6" value="correct"> He
+    </div>
+
+    <div class="question">
+      7. My mom ____ coffee every morning.<br>
+      <input type="radio" name="q7" value="correct"> drinks<br>
+      <input type="radio" name="q7" value="wrong"> drink<br>
+      <input type="radio" name="q7" value="wrong"> drinking
+    </div>
+
+    <div class="question">
+      8. She ____ like pizza.<br>
+      <input type="radio" name="q8" value="correct"> doesn’t<br>
+      <input type="radio" name="q8" value="wrong"> don’t<br>
+      <input type="radio" name="q8" value="wrong"> isn’t
+    </div>
+
+    <div class="question">
+      9. What is the correct negative sentence?<br>
+      <input type="radio" name="q9" value="wrong"> I not go to school.<br>
+      <input type="radio" name="q9" value="correct"> I don’t go to school.<br>
+      <input type="radio" name="q9" value="wrong"> I doesn’t go to school.
+    </div>
+
+    <div class="question">
+      10. Complete: “Does he ____ fast food?”<br>
+      <input type="radio" name="q10" value="correct"> eat<br>
+      <input type="radio" name="q10" value="wrong"> eats<br>
+      <input type="radio" name="q10" value="wrong"> eating
+    </div>
+
+    <button type="button" onclick="checkQuiz()">Show Score</button>
+    <div id="result"></div>
+  </form>
+
+  <script>
+    function checkQuiz() {
+      const form = document.getElementById('quiz-form');
+      const answers = form.querySelectorAll('input[type="radio"]:checked');
+      let score = 0;
+
+      answers.forEach((answer) => {
+        if (answer.value === 'correct') score++;
+      });
+
+      const result = document.getElementById('result');
+      result.textContent = `Your score: ${score} / 10`;
+    }
+  </script>
+
+</body>
+</html>
